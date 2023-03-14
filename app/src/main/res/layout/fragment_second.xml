@@ -1,0 +1,529 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".fragments.SecondFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/camera" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:padding="8dp"
+                    android:src="@drawable/instagram_logo" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="7dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="-65dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        android:src="@drawable/igtv" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="-27dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        android:src="@drawable/send" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#9E9E9E" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="0dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/black"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relative4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginEnd="7dp">
+
+                            <FrameLayout
+                                android:id="@+id/imageLabe4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/instafon" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="4dp"
+                                    app:shapeAppearanceOverlay="@style/circularImageView"
+                                    app:srcCompat="@drawable/prof" />
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:id="@+id/textLabe4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageLabe4"
+                                android:layout_centerInParent="true"
+                                android:singleLine="true"
+                                android:text="Your story"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp">
+
+                            <FrameLayout
+                                android:id="@+id/imageLabe35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/instafon" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="4dp"
+                                    app:shapeAppearanceOverlay="@style/circularImageView"
+                                    app:srcCompat="@drawable/karenna" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textLabe35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageLabe35"
+                                android:layout_centerVertical="true"
+                                android:singleLine="true"
+                                android:text="karennna"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp">
+
+                            <FrameLayout
+                                android:id="@+id/imageLabe25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/instafon" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="4dp"
+                                    app:shapeAppearanceOverlay="@style/circularImageView"
+                                    app:srcCompat="@drawable/zackjohn" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageLabe25"
+                                android:layout_centerInParent="true"
+                                android:singleLine="true"
+                                android:text="zackjohn"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp">
+
+                            <FrameLayout
+                                android:id="@+id/imageLabel7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/instafon" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="4dp"
+                                    app:shapeAppearanceOverlay="@style/circularImageView"
+                                    app:srcCompat="@drawable/kieron_d"
+                                    app:strokeColor="#FF005D" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textLabel7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageLabel7"
+                                android:layout_centerInParent="true"
+                                android:singleLine="true"
+                                android:text="kieron_d"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp">
+
+                            <FrameLayout
+                                android:id="@+id/imageLabe39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/instafon" />
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="4dp"
+                                    android:scaleType="centerCrop"
+                                    app:shapeAppearanceOverlay="@style/circularImageView"
+                                    app:srcCompat="@drawable/kraig_noga" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/textLabe39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageLabe39"
+                                android:layout_centerInParent="true"
+                                android:singleLine="true"
+                                android:text="craig_nnoga"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#D6D3D3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/khabib"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/circularImageView"
+                    app:srcCompat="@drawable/joshua" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/khabib"
+                    android:singleLine="true"
+                    android:text="joshua_l"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/khabib"
+                    android:singleLine="true"
+                    android:text="Tokyo, Japan"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/more" />
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fon" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fon" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/like" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/comment" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/send" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:padding="3dp"
+                        android:src="@drawable/bookmark" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/circularImageView"
+                    app:srcCompat="@drawable/comimage" />
+
+                <TextView
+                    android:id="@+id/TV_liner_6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Liked by craig_love and 44,686 others"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TV_liner_6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="joshua_l The game in Japan was amazing and I want to share some photos"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#D6D3D3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/home__1_">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/search">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/add">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="13dp"
+                    android:src="@drawable/like">
+
+                </ImageView>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/btn_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/circularImageView"
+                    app:srcCompat="@drawable/smallcon" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
